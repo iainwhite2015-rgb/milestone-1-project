@@ -1,0 +1,20 @@
+/* google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
+/* override browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general body styles*/
+body {
+    min-height : 100vh;
+    display: flex;
+    flex-direction: column; 
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    background-color: #faec57;
+}
