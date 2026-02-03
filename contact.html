@@ -25,10 +25,46 @@
         </nav>
     </header>
     <main>
-        <section id="contact">
-            <h1>Contact Us</h1>
-            <p>Email: info@vochemis.com</p>
-            <p>Phone: +1 (555) 123-4567</p>
+        <section id="signup">
+            <form id="signup-form" method="POST" action="form submissions/">
+                <h2>Please enter your details</h2>
+                <br>
+            </form>
+            <label for ="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" class="text-input" required>
+            <br>
+            <label for ="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" class="text-input" required>
+            <br>
+            <label for ="email">Email Address:</label>
+            <input type="email" id="email" name="email" class="text-input" required>   
+            <br>
+            <label for="role">I am interested in:</label>
+            <div class="radio-buttons">
+                <div>
+                    <label for="voice acting">Voice Acting</label>
+                    <input type="radio" id="voice acting" name="role" value="voice acting" required checked>
+                </div>
+                <div>
+                    <label for="singer">Singer</label>
+                    <input type="radio" id="singer" name="role" value="singer" required checked>
+                </div>
+                <div>
+                    <label for="voice-overs">Voice overs</label>
+                    <input type="radio" id="voice-overs" name="role" value="voice-overs" required checked>
+                </div>
+                <div>
+                    <label for="audiobook-narration">Audiobook Narration</label>
+                    <input type="radio" id="audiobook-narration" name="role" value="audiobook-narration" required checked>
+                </div>
+            </div>
+            <div>
+                <label for="text-box">Tell us more about your project:</label>
+                <textarea id="text-box" name="text-box" class="text-input" maxlength="500" rows="5"></textarea>
+            </div>
+            <button type="submit" class="join-button">Submit</button>
+                
+            </form>
         </section>
     </main>
     <footer>
