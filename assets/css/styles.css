@@ -37,19 +37,21 @@ h1, h2, h3 {
 header {
     font-size: 140%;
     display: flex;
-    align-items: flex-end;
+    align-items: baseline;
     position: fixed;
     padding: 0 1rem;
     width: 100%;
     background-color: #faec57;
     box-shadow: 0 2px 5px rgba(58, 58, 58, 0.3);
+    justify-content: space-between;
+    z-index: 99;
 }
 header a {
     text-decoration: none;
     color: black;
 }   
 #menu {
-    font-size :110%;
+    font-size :90%;
     list-style-type: none;
     letter-spacing: 4px;
 
@@ -85,7 +87,7 @@ nav {
 
 main {
     flex: 1 0 auto;
-    margin-top: 80px;
+    margin-top: 71px;
     display: flex;
     flex-direction: column;
 }
@@ -97,6 +99,41 @@ main {
     position: relative
 }
 
+#contact { 
+    background-image: url("../images/contact.png");
+    background-size: cover;
+    padding:20px 10% 0 10%;
+    flex-grow: 1;
+}
+
+#contact-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+#contact-form h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.text-input, .text-area {
+    background: transparent;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.contact-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    background-color: #22250c;
+    color: #ffffff; 
+}
 
 
 #social-networks {
@@ -112,6 +149,8 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
+
+
 /* media query : large or landscape phones (576px and up)*/
 @media screen and (min-width: 576px) {
     #photos {
@@ -149,7 +188,7 @@ main {
     /* Main content*/
     main {
         /* Push main content down to accommodate larger header */
-        margin-top: 115px;
+        margin-top: 75px;
     }
     /* hero */
     #cover-text {
@@ -157,10 +196,35 @@ main {
         right: 50px;
     }
    
-
     #photos {
         column-count: 3;
     }
+}
+
+/* form */
+
+#contact {
+    background-position: center;
+    position: relative;
+}
+#contact-form {
+    max-width: 500px;
+    left: 10%;
+    top: 200px;
+}
+.radio-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-input:hover, .text-area:hover {
+    border:#fa3131;
+}
+
+.contact-button:hover {
+    background-color: #ffffff;
+    color: #ddf540;
 }
 
 /* media query for laptops and larger (992px and up) */

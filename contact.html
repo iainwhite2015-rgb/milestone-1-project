@@ -25,11 +25,10 @@
         </nav>
     </header>
     <main>
-        <section id="signup">
-            <form id="signup-form" method="POST" action="form submissions/">
+        <section id="contact">
+            <form id="contact-form" method="POST" action="form submissions/">
                 <h2>Please enter your details</h2>
                 <br>
-            </form>
             <label for ="first-name">First Name:</label>
             <input type="text" id="first-name" name="first-name" class="text-input" required>
             <br>
@@ -40,10 +39,11 @@
             <input type="email" id="email" name="email" class="text-input" required>   
             <br>
             <label for="role">I am interested in:</label>
+            <br>
             <div class="radio-buttons">
                 <div>
-                    <label for="voice acting">Voice Acting</label>
-                    <input type="radio" id="voice acting" name="role" value="voice acting" required checked>
+                    <label for="voice actors">Voice Actors</label>
+                    <input type="radio" id="voice actors" name="role" value="voice actors" required checked>
                 </div>
                 <div>
                     <label for="singer">Singer</label>
@@ -58,11 +58,12 @@
                     <input type="radio" id="audiobook-narration" name="role" value="audiobook-narration" required checked>
                 </div>
             </div>
+            <br>
             <div>
                 <label for="text-box">Tell us more about your project:</label>
                 <textarea id="text-box" name="text-box" class="text-input" maxlength="500" rows="5"></textarea>
             </div>
-            <button type="submit" class="join-button">Submit</button>
+            <button type="submit" class="contact-button">Submit</button>
                 
             </form>
         </section>
