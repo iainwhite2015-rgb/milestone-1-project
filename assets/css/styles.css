@@ -87,7 +87,7 @@ nav {
 
 main {
     flex: 1 0 auto;
-    margin-top: 71px;
+    margin-top: 77px;
     display: flex;
     flex-direction: column;
 }
@@ -188,7 +188,7 @@ main {
     /* Main content*/
     main {
         /* Push main content down to accommodate larger header */
-        margin-top: 75px;
+        margin-top: 95px;
     }
     /* hero */
     #cover-text {
